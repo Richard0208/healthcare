@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Step-by-Step Registration</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Step 1: Personal Information</h2>
+    <form id="step1">
+      <input type="text" placeholder="First Name" id="firstName" required>
+      <input type="text" placeholder="Last Name" id="lastName" required>
+      <button onclick="nextStep(2)">Next</button>
+    </form>
+    <h2>Step 2: Account Information</h2>
+    <form id="step2" style="display: none;">
+      <input type="email" placeholder="Email" id="email" required>
+      <input type="password" placeholder="Password" id="password" required>
+      <button onclick="nextStep(3)">Next</button>
+    </form>
+    <h2>Step 3: Confirmation</h2>
+    <div id="step3" style="display: none;">
+      <p>Thank you for registering!</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
